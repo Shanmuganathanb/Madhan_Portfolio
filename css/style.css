@@ -1,0 +1,183 @@
+body{
+    position: relative;
+    overflow-y: scroll;
+    color:white;
+    background-color: rgb(210, 255, 255);
+}
+
+/*Navigation Bar*/
+nav .col-lg-8 h5{
+    font-weight:1000;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgb(255, 255, 255) !important;
+    opacity:1 !important;
+    padding-left:10px;
+    border-left:2px solid black;
+    padding-right:10px;
+    border-right:2px solid black;
+}
+.navbar{
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    opacity:0.85;
+}
+.navbar .nav-link{
+    border-bottom:0.5px dotted transparent;
+    border-top:0.5px dotted transparent;
+}
+.navbar-nav a:hover{
+    color:yellow !important;
+    border-bottom: 0.5px solid rgb(204, 204, 47) !important;
+    border-top:0.5px dotted rgb(97, 196, 221) !important;
+    height:100%;
+}
+.navbar-nav a.active,.navbar-nav a.active:focus{
+    color:yellow!important;
+    border-bottom: 2px solid yellow;
+}
+
+/*Multiple IDs*/
+
+#About .bor,#Experience .bor,#Skills .bor,#Education .bor{
+    height: 2px;
+    width:15%;
+    background-color:rgb(0, 255, 234);
+    margin:12px auto 10px auto;
+}
+#Experience .box,#Education .box{
+    padding:20px;
+    border:1px dotted rgba(0, 0, 0, 0.445);
+    border-top: none;
+}
+#Experience h3, #Education h3{
+    color: rgb(19, 16, 16);
+    background-color: rgb(246, 250, 255);
+    font-weight:500;
+    border-radius:25%;
+    border-bottom: 2px dashed rgb(33, 207, 193);
+    margin-top:15px;
+    margin-bottom: 10px; 
+}
+#Experience h5,#Education h5{
+    color:rgb(91, 219, 41);
+}
+#Experience p, #Education p{
+    font-weight:200;
+}
+
+/*Home*/
+#Home{
+    background: url(../img/90d7575b-4a69-4bfe-9591-a188ab0b6935.jpg);
+    min-height:700px;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+#Home .dark-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    min-height:700px;
+}
+#Home .home-content .lg-d{ 
+    color:rgb(198, 209, 211);
+    font-size:20px !important;
+    padding-top:200px;
+}
+#Home .lg-d h4{
+    color:rgba(206, 242, 247, 0.63);
+}
+#Home .home-content .lg-s{
+    color:rgb(16, 21, 70);
+    font-weight: 900;
+    font-size:70px;
+    padding-top:350px;
+    padding-left:-50px;
+}
+@media only screen and (max-width:800px){
+    #home .home-content .lg-s{
+        font-size:60px !important;
+        padding-top:200px;
+        padding-left:70px;
+    }
+    #home{
+        min-height:500px;
+        padding-left: -1000px;
+        background-repeat:no-repeat;
+        width:100%;
+    }
+}
+
+/*About*/
+#About ul {
+    list-style: none;
+}
+#About ul li:before {
+    content: '✓ ';
+    color:black;
+    width:10px;
+    height:10px;
+}
+#About .im{
+    background-color: rgba(0, 0, 0, 0.329);
+}
+#About .img{
+    height:500px;
+}
+/*Experience*/
+#Experience h4{
+    color:rgba(0, 0, 0, 0.986);
+    font-weight:300;
+}
+
+/*Skills*/
+#Skills {
+    padding-bottom: 0px;
+}
+#Skills .cont p {
+    opacity: 0;
+    padding-top:0px;
+    font-size:20px;
+    transition: all .3s ease;
+}
+#Skills .cont {
+    overflow:hidden;
+    padding-bottom: 20px;
+    height: calc(auto + 30px);
+}
+#Skills .cont img{
+    width:100px;
+    height:100px;
+}
+#Skills .cont h3::before {
+    content: '';
+    display: block;
+    margin: 8px auto 12px auto;
+    height: 1px;
+    width: 60px;
+    background-color: #00b30c;
+    transition: all .3s ease;
+}
+#Skills .cont:hover h3::before{
+    width: 180px;
+}
+#Skills .cont:hover p {
+    opacity: 1;
+    padding-top: 7px;
+    color: rgb(69, 172, 0);
+}
+#Skills .cont h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+/*Contact*/
+#Contact i{
+    margin:10px auto 10px auto;
+}
+#Contact li { 
+    list-style-type: none;
+    padding:0px;
+}
