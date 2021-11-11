@@ -39,6 +39,12 @@ nav .col-lg-8 h5{
     border-bottom: 2px solid yellow;
 }
 
+@media only screen and (max-width: 576px){
+    #Navbar{
+        background-color: #264f5d;
+    }
+}
+
 /*Multiple IDs*/
 
 #About .bor,#Experience .bor,#Skills .bor,#Education .bor{
